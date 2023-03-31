@@ -3,6 +3,7 @@
         "id": "1",
         "name": "Mr. Raju",
         "title":"How to get your first job as a self-taught programmer",
+        "publishing_date":"Mar 14 (4 Days ago)",
         "user_img":"https://images.unsplash.com/photo-1611485988300-b7530defb8e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         "img" : "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         "read_time":"05 min read",
@@ -15,6 +16,8 @@
         "id": "2",
         "name": "Mr. Raju",
       "title":"How to get your first job as a self-taught programmer",
+      "publishing_date":"Mar 14 (4 Days ago)",
+
         "user_img":"https://images.unsplash.com/photo-1611485988300-b7530defb8e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         "img" : "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         "read_time":"20 min read",
@@ -27,6 +30,8 @@
         "id": "3",
         "name": "Mr. Raju",
         "title":"How to get your first job as a self-taught programmer",
+        "publishing_date":"Mar 14 (4 Days ago)",
+
         "user_img":"https://images.unsplash.com/photo-1611485988300-b7530defb8e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         "img" : "https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         "read_time":"35 min read",
@@ -39,6 +44,8 @@
         "id": "4",
         "name": "Mr. Raju",
         "title":"How to get your first job as a self-taught programmer",
+        "publishing_date":"Mar 14 (4 Days ago)",
+
         "user_img":"https://images.unsplash.com/photo-1611485988300-b7530defb8e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         "img" : "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         "read_time":"45 min read",
