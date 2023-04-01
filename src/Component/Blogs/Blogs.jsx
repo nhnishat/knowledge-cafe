@@ -9,7 +9,6 @@ const Blogs = ({ handleWatchTime, watchTime }) => {
 	const [blogs, setBlogs] = useState([]);
 	const [bookmarks, setBookmark] = useState([]);
 	const [time, setTime] = useState(watchTime);
-	// console.log(time);
 
 	useEffect(() => {
 		fetch('Blog.json')
@@ -23,15 +22,10 @@ const Blogs = ({ handleWatchTime, watchTime }) => {
 		setTime(watchTimeFromStorage);
 	}, [watchTime]);
 
-	// const handleBookmark = (question) => {
-	// 	const newBookmark = [...bookmarks, question];
-	// 	setBookmark(newBookmark);
-	// };
 	const check = (question) => {
 		const data = bookmarks.includes(question);
 		return data;
 	};
-	//  toast-part
 
 	const handleBookmark = (question) => {
 		if (check(question)) {
