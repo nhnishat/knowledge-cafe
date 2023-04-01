@@ -2,24 +2,29 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 import Bookmark from '../Bookmark/Bookmark';
-import Time from '../SpanTime/Time';
+
 import './Blogs.css';
-const Blogs = () => {
+const Blogs = ({ handleWatchTime, watchTime }) => {
 	const [blogs, setBlogs] = useState([]);
 	const [bookmarks, setBookmark] = useState([]);
-	const [readTimes, setReadTime] = useState([]);
+	const [time, setTime] = useState(watchTime);
+	// console.log(time);
+
 	useEffect(() => {
 		fetch('Blog.json')
 			.then((res) => res.json())
 			.then((data) => setBlogs(data));
 	}, []);
+
+	useEffect(() => {
+		const watchTimeFromStorage = localStorage.getItem('watchTime');
+		console.log(watchTimeFromStorage);
+		setTime(watchTimeFromStorage);
+	}, [watchTime]);
+
 	const handleBookmark = (question) => {
 		const newBookmark = [...bookmarks, question];
 		setBookmark(newBookmark);
-	};
-	const handleReadTime = (question) => {
-		const newReadTime = [...readTimes, question];
-		setReadTime(newReadTime);
 	};
 
 	return (
@@ -30,17 +35,19 @@ const Blogs = () => {
 						<Blog
 							blog={blog}
 							handleBookmark={handleBookmark}
-							handleReadTime={handleReadTime}
+							handleWatchTime={handleWatchTime}
 							key={blog.id}
 						></Blog>
 					))}
 				</div>
-				<div className="w-1/2">
-					{readTimes.find((readTime) => (
-						<Time readTime={readTime}></Time>
-					))}
+				<div className="w-1/2 sticky top-0">
+					<div className="w-2/2 border mb-3 p-3 text-center text-2xl">
+						<h2 className="text-gray-800 text-3xl font-bold">
+							Spent time on read :{time} min
+						</h2>
+					</div>
 					<div className="w-2/2">
-						<h2 className="w-2/2 border mb-3 p-3 text-center text-2xl">
+						<h2 className="w-2/2 border mb-3 p-3 text-center text-2xl font-bold">
 							BookMark: {bookmarks.length}
 						</h2>
 						{bookmarks.map((bookmark) => (

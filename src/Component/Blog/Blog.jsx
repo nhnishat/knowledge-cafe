@@ -4,10 +4,10 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
 const Blog = (props) => {
 	// console.log(props.blog.img);
-	const { name, img, user_img, publishing_date, title, tag, read_time } =
-		props.blog;
+	const { name, img, user_img, publishing_date, title, tag, time } = props.blog;
+	// console.log(time);
 	const handleBookmark = props.handleBookmark;
-	const handleReadTime = props.handleReadTime;
+	const handleWatchTime = props.handleWatchTime;
 	return (
 		<div className="border drop-shadow-xl rounded-lg mb-8 w-4/4 p-5">
 			<img className="rounded-lg w-full" src={img} alt="" />
@@ -25,7 +25,7 @@ const Blog = (props) => {
 				</div>
 				<div className="flex ">
 					<p>
-						<span>{read_time}</span>
+						<span>{time}</span>
 						<button onClick={() => handleBookmark(props.blog)} className="ms-2">
 							<FontAwesomeIcon icon={faBookmark} />
 						</button>
@@ -38,7 +38,7 @@ const Blog = (props) => {
 				<small className="font-semibold ms-2">{tag[1].two}</small>
 			</p>
 			<button
-				onClick={() => handleReadTime(props.blog)}
+				onClick={() => handleWatchTime(time)}
 				className="underline text-green-600 mt-2"
 			>
 				Mark as read
