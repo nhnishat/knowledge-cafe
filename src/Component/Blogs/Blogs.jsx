@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 import Bookmark from '../Bookmark/Bookmark';
+import { ToastContainer, toast } from 'react-toastify';
 
 import './Blogs.css';
 const Blogs = ({ handleWatchTime, watchTime }) => {
@@ -22,9 +23,23 @@ const Blogs = ({ handleWatchTime, watchTime }) => {
 		setTime(watchTimeFromStorage);
 	}, [watchTime]);
 
+	// const handleBookmark = (question) => {
+	// 	const newBookmark = [...bookmarks, question];
+	// 	setBookmark(newBookmark);
+	// };
+	const check = (question) => {
+		const data = bookmarks.includes(question);
+		return data;
+	};
+	//  toast-part
+
 	const handleBookmark = (question) => {
-		const newBookmark = [...bookmarks, question];
-		setBookmark(newBookmark);
+		if (check(question)) {
+			toast('Already added this !', {});
+		} else {
+			const newCart = [...bookmarks, question];
+			setBookmark(newCart);
+		}
 	};
 
 	return (
@@ -56,6 +71,7 @@ const Blogs = ({ handleWatchTime, watchTime }) => {
 					</div>
 				</div>
 			</div>
+			<ToastContainer></ToastContainer>
 		</div>
 	);
 };
