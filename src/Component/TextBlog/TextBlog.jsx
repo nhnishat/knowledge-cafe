@@ -25,9 +25,7 @@ const TextBlog = () => {
 				</p>
 			</div>
 			<div className="border my-5 p-4">
-				<h1 className="my-2 p-2 font-bold">
-					Question:- How does work useState?
-				</h1>
+				<h1 className="my-2  font-bold">Question:- How does work useState?</h1>
 				<p>
 					<span className="font-bold">Answer</span> It is React Hook that allows
 					you to add state to a functional component. It returns an array with

@@ -8,6 +8,7 @@ const Blog = (props) => {
 	// console.log(time);
 	const handleBookmark = props.handleBookmark;
 	const handleWatchTime = props.handleWatchTime;
+
 	return (
 		<div className="border drop-shadow-xl rounded-lg mb-8 w-4/4 p-5">
 			<img className="rounded-lg w-full" src={img} alt="" />
@@ -25,7 +26,7 @@ const Blog = (props) => {
 				</div>
 				<div className="flex ">
 					<p>
-						<span>{time}</span>
+						<span className="me-2">{time} min read</span>
 						<button onClick={() => handleBookmark(props.blog)} className="ms-2">
 							<FontAwesomeIcon icon={faBookmark} />
 						</button>

@@ -41,8 +41,8 @@ const Blogs = ({ handleWatchTime, watchTime }) => {
 					))}
 				</div>
 				<div className="w-1/2 sticky top-0">
-					<div className="w-2/2 border mb-3 p-3 text-center text-2xl">
-						<h2 className="text-gray-800 text-3xl font-bold">
+					<div className="w-2/2 border mb-3 p-3 text-center text-2xl bg-gray-800">
+						<h2 className=" text-white text-3xl font-bold">
 							Spent time on read :{time} min
 						</h2>
 					</div>
