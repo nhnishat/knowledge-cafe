@@ -24,6 +24,33 @@ const TextBlog = () => {
 					</div>
 				</p>
 			</div>
+			<div className="border my-5 p-4">
+				<h1 className="my-2 p-2 font-bold">
+					Question:- How does work useState?
+				</h1>
+				<p>
+					<span className="font-bold">Answer</span> It is React Hook that allows
+					you to add state to a functional component. It returns an array with
+					two values: the current state and a function to update it
+				</p>
+			</div>
+			<div className="border my-5 p-4">
+				<h1 className="font-bold"> Question:- How does work react?</h1>
+				<h2>
+					<span className="font-bold">Answer</span> React components work
+					similarly to JavaScript functions as they accept arbitrary inputs
+					called properties or props
+				</h2>
+			</div>
+			<div className="border my-5 p-4">
+				<h1 className="font-bold"> Question:- How does work useEffect?</h1>
+				<h2>
+					<span className="font-bold">Answer</span> After rendering finishes,
+					useEffect will check the list of dependency values against the values
+					from the last render, and will call your effect function if any one of
+					them has changed
+				</h2>
+			</div>
 		</div>
 	);
 };
